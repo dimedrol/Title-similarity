@@ -1,13 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26228.9
+VisualStudioVersion = 15.0.26228.10
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TitleSimilarity", "TitleSimilarity\TitleSimilarity.csproj", "{223873E1-8EC3-44AE-A958-2452CD7F68C4}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Providers", "Providers\Providers.csproj", "{7DB63F8F-EFC3-43D6-8E79-522B39F77EDC}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extensions", "Extentions\Extensions.csproj", "{D2D6F804-DDFD-47BF-A741-5BDD18A6860E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,14 +15,6 @@ Global
 		{223873E1-8EC3-44AE-A958-2452CD7F68C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{223873E1-8EC3-44AE-A958-2452CD7F68C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{223873E1-8EC3-44AE-A958-2452CD7F68C4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7DB63F8F-EFC3-43D6-8E79-522B39F77EDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7DB63F8F-EFC3-43D6-8E79-522B39F77EDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7DB63F8F-EFC3-43D6-8E79-522B39F77EDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7DB63F8F-EFC3-43D6-8E79-522B39F77EDC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D2D6F804-DDFD-47BF-A741-5BDD18A6860E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D2D6F804-DDFD-47BF-A741-5BDD18A6860E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D2D6F804-DDFD-47BF-A741-5BDD18A6860E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D2D6F804-DDFD-47BF-A741-5BDD18A6860E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
