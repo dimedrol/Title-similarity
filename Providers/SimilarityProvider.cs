@@ -1,37 +1,31 @@
 ﻿using Data;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Providers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Tests
+namespace Providers
 {
-    [TestClass]
-    public class GeosearchProviderTest
+    public class SimilarityProvider
     {
-        [TestMethod]
-        public void ExecuteRequest( )
+        public static List<KeyValuePair<string , double>> ProcessStrings( List<string> stringList )
         {
-            var provider = new GeosearchProvider( );
-            var titles = provider.GetImageTitles( Location.Espoo , 10000 );
 
             var list = new List<Tuple<string , double>>( );
             var dict = new Dictionary<string , double>( );
-            for( var i = 0; i < titles.Count; i++ )
+            for( var i = 0; i < stringList.Count; i++ )
             {
-                var originalString = titles[ i ];
+                var originalString = stringList[ i ];
                 var mostSimilarString = string.Empty;
                 var maxSimilarity = (double) -1;
-                for( var j = 0; j < titles.Count; j++ )
+                for( var j = 0; j < stringList.Count; j++ )
                 {
                     if( i == j )
                         continue;
 
 
-                    var tempSimilarity = originalString.CalculateSimilarity( titles[ j ] );
+                    var tempSimilarity = originalString.CalculateSimilarity( stringList[ j ] );
 
                     maxSimilarity += tempSimilarity;
                 }
@@ -48,6 +42,8 @@ namespace Tests
             } );
 
             var resultList = dict.OrderByDescending( title => title.Value ).ToList( );
+
+            return resultList;
         }
     }
 }

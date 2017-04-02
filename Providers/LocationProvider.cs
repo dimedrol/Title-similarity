@@ -1,5 +1,6 @@
 ﻿using Data;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Providers
 {
@@ -18,14 +19,17 @@ namespace Providers
             { Location.Stockholm,      "59.3260668|17.8474654" },
         };
 
-
-
         public static string GetCoordinates( Location location )
         {
             if( CoordinatesDictionary.ContainsKey( location ) )
                 return CoordinatesDictionary[ location ];
 
             return CoordinatesDictionary[ _DefaultLocation ];
+        }
+
+        public static List<string> GetLocations( )
+        {
+            return CoordinatesDictionary.Keys.OrderBy( key => key ).Select( key => key.ToString( ) ).ToList( );
         }
     }
 }
