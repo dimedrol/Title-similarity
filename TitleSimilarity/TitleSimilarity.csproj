@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{978FF671-B3C7-4E06-A678-22742C90C592}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>TimeSimilarity</RootNamespace>
-    <AssemblyName>TimeSimilarity</AssemblyName>
+    <RootNamespace>TitleSimilarity</RootNamespace>
+    <AssemblyName>TitleSimilarity</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>

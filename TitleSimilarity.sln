@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Providers", "Providers\Prov
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "Extensions\Data.csproj", "{BF6A8539-796F-42BB-8F20-11164796B686}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TitleSimilarity", "TimeSimilarity\TitleSimilarity.csproj", "{978FF671-B3C7-4E06-A678-22742C90C592}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TitleSimilarity", "TitleSimilarity\TitleSimilarity.csproj", "{978FF671-B3C7-4E06-A678-22742C90C592}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
